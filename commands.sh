@@ -121,4 +121,4 @@ python "${MERGE_JUNCTION_SCRIPT}" --beds "${JUNCTION_BEDS[@]}" -o "${SPECIES}_Se
 # -----------------------------------------------------------------------------
 # Step 5: set2
 # -----------------------------------------------------------------------------
-python "${GET_SET2_SCRIPT}" --species "${SPECIES}" --set1 "${SPECIES}_Set1.bed" --genome "${GENOME}" --specific "${SPECIFIC}"
+python "${GET_SET2_SCRIPT}" --species "${SPECIES}" --set1 "${SPECIES}_Set1.bed"  --specific "${SPECIFIC}"
