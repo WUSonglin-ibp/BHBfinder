@@ -317,7 +317,7 @@ def get_set2(config, paths):
     set1_file = f"{config['species']}_Set1.bed"
     check_file(Path(paths['parent_dir']) / set1_file)
     specific = config.get('specific', True)
-    set2_cmd = f"python {paths['get_set2_script']} --species {config['species']} --set1 {set1_file} --genome {paths['genome']} --specific {specific}"
+    set2_cmd = f"python {paths['get_set2_script']} --species {config['species']} --set1 {set1_file} --specific {specific}"
     run_command(set2_cmd, paths['parent_dir'])
     return
 
