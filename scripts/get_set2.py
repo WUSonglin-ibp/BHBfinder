@@ -282,7 +282,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Get Set2 (read count > 1, overlap < 10 nt)")
     parser.add_argument('--species', type=str,  required=True, help="Species name")
     parser.add_argument('--set1', type=str, required=True, help="Bed files for merge")
-    parser.add_argument('--specific', default='True', help='If the data is strand specific data, specific data by default' )
+    parser.add_argument('--specific', default='True', help='If the data is strand specific data or not, specific data by default' )
     args = parser.parse_args()
 
     output_file_name = args.species + '_Set2.bed'
