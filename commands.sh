@@ -42,8 +42,8 @@ cd "${WORK_DIR}"
 # 3. Convert each downloaded Run into FASTA files
 #      fastq-dump --split-3 --fasta --threads "${THREADS}" --outdir ./Download_dir \
 #          ./Download_dir/SRR26999894
-# 4. For paired-end stranded RNA-seq data, determine which FASTA file (typically read 2) 
-#    contains reads that have the same orientation as the source RNA.
+# 4. For paired-end stranded RNA-seq data, determine which FASTA file contains
+#    reads that have the same orientation as the source RNA.
 # 5. Copy the selected FASTA file to the sample directory expected by BHBfinder:
 #      ${WORK_DIR}/${SAMPLE}/${SAMPLE}.fasta
 
